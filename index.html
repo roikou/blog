@@ -1,25 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BLOG</title>
-    <!-- icon fontawesome -->
-    <script src="https://kit.fontawesome.com/03c471e0fe.js" crossorigin="anonymous"></script>
-<!-- css -->
+    <title>Document</title>
+    <!-- css -->
     <link rel="stylesheet" href="style.css">
+    <!-- icon fontawesome -->
+    <script src="https://kit.fontawesome.com/f90068558c.js" crossorigin="anonymous"></script>
+
 </head>
+
 <body>
-    
 
-    <header></header>
+    <header>
+        <div class="header">
+            <img class="header-icon" src="./assets/header-icon.png" alt="icon" />
+            <h3 class="title"><a href='/'>Cobee The Coder</a></h3>
+            <nav>
+                <a href='#'>Project</a>
+                <a href='#'>Contact</a>
+                <a href='#'>About Us</a>
+            </nav>
+        </div>
+    </header>
 
+    <main>
+        <!-- jumbotron -->
+        <section id="jumbotron">
+            <div class="jumbotron">
+                <h1 onmouseover="changeText(this)" onmouseout="changeTextBack(this)" class="jumbotron-title">Dapatkan Tips Programing Disini!</h1>
+                <div class="header-flex">
+                    <div>
+                        <h2 class="jumbotron-text">
+                            Baru di Dunia Programing? <br> Belajar Lewat Pengembangan <span style="color: #f4a261;">Game
+                                Dan Web</span> sederhana!
+                        </h2>
+                        <div class="mini-text-flex">
+                            <p class="mini-text">Belajar Programming Disini</p>
+                            <button id="icon-up">
+                                <i class="far fa-hand-point-up"></i>
+                            </button>
+                            <button onclick="changeMiniText()" id="icon-down" class="icon-down">
+                                <i class="far fa-hand-point-down"></i>
+                            </button>
 
-    <main></main>
+                        </div>
+                    </div>
+                    <div>
+                        <img onmouseover="changeImage(this)" onmouseout="changeImageBack(this)" class="jumbotron-img" src="./assets/img-header.png" alt="" width="700" height="300">
 
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <footer></footer>
+        <section>
+            <div class="main-content">
+                <aside>
+                    <div>
+                        <h3 class="aside-title">It's Coobe</h3>
+                        <img class="profile-picture"
+                            src="https://www.kolpaper.com/wp-content/uploads/2020/02/kobe-bryant-iphone-wallpaper.jpg"
+                            alt="Coobe" width="150px" height="auto">
+                    </div>
+                </aside>
+                <div class="all">
+                    <div>
+                        <h3>What Is Coding?</h3>
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/j-3eArinB7E?si=sim7IWgZGOH4LHU2"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+                    </div>
 
+                    <div>
+                        <h3>Progamming VS Coding</h3>
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/CIRGjwYgdT4?si=zocfzhxkTlORf-Gu"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
+                    <div class="location">
+                        <h3>Location</h3>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d246.804088503766!2d114.36431267268838!3d-8.216287050028317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd145315245ae1d%3A0xfe3aacc27b3aafc7!2sSMP%20Katolik%20Santo%20Yusup%20Banyuwangi!5e0!3m2!1sid!2sid!4v1718194931106!5m2!1sid!2sid"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+            <!-- <video controls src="./assets/coding.mp4"></video> -->
+            <!-- <audio autoplay controls src="./assets/fantasy.mp3"></audio> -->
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="main-footer">
+            <h3 class="info-top">Cobee The Junior Progammer</h3>
+            <div class="social-media">
+                <i class="fab fa-instagram-square"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-facebook-square"></i>
+                <i class="fas fa-envelope"></i>
+            </div>
+            <p class="info-center">Copyright &copy; 2021. Cobee. All rights reserved</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>

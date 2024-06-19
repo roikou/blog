@@ -1,0 +1,211 @@
+/* body */
+* {
+    box-sizing: border-box;
+    font-family: "Oxygen", sans-serif;
+}
+
+body {
+    margin: 0% 0% 0% 0%;
+    padding: 0;
+}
+
+main {
+    /* costumize with the header's height */
+    margin-top: 60px;
+}
+
+/* navigation */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* bottom: 0; */
+    height: 60px;
+    background-color: rgb(38, 70, 83);
+    /* add s-index after adding slider to see the difference*/
+    z-index: 100;
+    /* box-shadow: 0px 0px 50px gainsboro; */
+}
+
+.title {
+    text-align: left;
+    position: absolute;
+    left: 20px;
+    padding: 0;
+    margin: 14px 30px 0px;
+    color: rgb(244, 162, 97);
+}
+
+nav {
+    position: absolute;
+    right: 0;
+    margin: 14px 30px 0px;
+}
+
+a {
+    color: rgb(244, 162, 97);
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.header-icon {
+    width: 40px;
+    margin: 8px 15px;
+    position: absolute;
+}
+
+main {
+    margin-top: 60px;
+}
+
+/* jumbotron */
+.jumbotron {
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(38, 70, 83);
+}
+
+#jumbotron {
+    width: 100%;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.jumbotron-title {
+    color: rgb(224, 251, 252);
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.jumbotron-text {
+    color: rgb(224, 251, 252);
+    text-align: left;
+    padding-bottom: 20px;
+    border-bottom: 8px solid rgb(244, 162, 97);
+}
+
+/* style lainnya */
+.jumbotron-img {
+    height: 300px;
+}
+
+.mini-text-flex {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.mini-text {
+    color: rgb(224, 251, 252);
+    text-align: left;
+    margin-right: 5px;
+}
+
+.fa-hand-point-up {
+    color: aliceblue;
+    font-size: 20px;
+
+}
+
+.icon-down {
+    display: none;
+}
+
+.fa-hand-point-down {
+    color: aliceblue;
+    font-size: 20px;
+}
+
+button {
+    background-color: rgb(38, 70, 83);
+    border-style: none;
+
+
+}
+
+button:hover {
+    cursor: pointer;
+    transform: translateY(5px);
+}
+
+.main-content {
+    display: flex;
+    justify-content: flex-start;
+    margin: 20px 20px;
+}
+
+aside {
+    max-width: 18%;
+    max-height: 800px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px gainsboro;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.aside-title {
+    margin-top: 50px;
+    font-size: 25px;
+    border-top: 5px solid rgb(38, 70, 83);
+    border-radius: 5px;
+}
+
+.profile-picture {
+    border-style: solid;
+    border-radius: 50%;
+    padding: 3px;
+}
+
+.all {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+
+footer {
+    background-color: rgb(38, 70, 83);
+}
+
+.center-footer {
+    margin: 0 20px;
+}
+
+.main-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.info-center {
+    text-align: center;
+    width: 100%;
+    padding-top: 5px;
+    border-top: 1px solid white;
+    color: rgb(244, 162, 97);
+}
+
+.info-top {
+    text-align: center;
+    width: 100%;
+    padding-top: 5px;
+    color: rgb(224, 251, 252);
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+}
+.fa-instagram-square, .fa-twitter-square, .fa-facebook-square, .fa-envelope {
+    padding: 5px;
+    font-size: 30px;
+    color: white;
+}
