@@ -22,11 +22,13 @@ main {
     right: 0;
     /* bottom: 0; */
     height: 60px;
-    background-color: rgb(38, 70, 83);
+    background-color: rgb(40, 147, 214);
     /* add s-index after adding slider to see the difference*/
     z-index: 100;
     /* box-shadow: 0px 0px 50px gainsboro; */
 }
+
+
 
 .title {
     text-align: left;
@@ -44,7 +46,7 @@ nav {
 }
 
 a {
-    color: rgb(244, 162, 97);
+    color: rgb(18, 38, 171);
     text-decoration: none;
     padding: 10px;
     font-weight: bold;
@@ -92,7 +94,7 @@ main {
 
 /* style lainnya */
 .jumbotron-img {
-    height: 300px;
+    height: 400px;
 }
 
 .mini-text-flex {
@@ -124,8 +126,6 @@ main {
 button {
     background-color: rgb(38, 70, 83);
     border-style: none;
-
-
 }
 
 button:hover {
@@ -133,20 +133,22 @@ button:hover {
     transform: translateY(5px);
 }
 
+/* MAIN CONTENT*/
 .main-content {
     display: flex;
     justify-content: flex-start;
-    margin: 20px 20px;
+    margin: 20px;
 }
 
 aside {
-    max-width: 18%;
+    max-width: 25%;
     max-height: 800px;
     border-radius: 10px;
     box-shadow: 0px 0px 30px gainsboro;
     padding: 20px;
     text-align: center;
     margin-top: 50px;
+    background-color: white;
 }
 
 .aside-title {
@@ -160,16 +162,153 @@ aside {
     border-style: solid;
     border-radius: 50%;
     padding: 3px;
+    box-shadow: 0 0 20px gainsboro;
 }
 
-.all {
+
+/* like dislike button */
+.toggle {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    width: 100%;
-    align-items: center;
+    margin: 10px;
+}
+.btn {
+    background-color: transparent;
+  }
+  .button:hover {
+    cursor: pointer;
+  }
+  .green {
+    color: green;
+  }
+  .red {
+    color: red;
+  }
+  .contact-container {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  ul, li {
+    position: relative;
 }
 
+input {
+    width: 70%;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(38, 70, 83);
+    height: 40px;
+    margin: 0;
+    padding: 5px;
+}
+
+.addBtn {
+    width: 30%;
+    padding: 6px;
+    background-color: rgb(38, 70, 83);
+    margin: 0;
+    cursor: pointer;
+    color: snow;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 10px;
+    }
+
+.search-tags-list {
+    list-style: none;
+    margin: 30px 0;
+    padding: 0;
+    }
+
+.search-tags-item {
+    margin: 5px;
+    padding: 10px;
+    background-color: rgb(38, 70, 83);
+    color: snow;
+    text-align: left;
+    }
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0 5px;
+    color: tomato;
+    font-family: "Fredoka One", cursive;
+    cursor: pointer;
+    font-size: 20px;
+    }
+
+
+    /*CONTENT*/
+    .content {
+        /* background-color: white; */
+        margin-left: 10%;
+        /* margin-right: 10px; */
+        /* border-radius: 10px; */
+        /* box-shadow: 0px 0px 40px gainsboro; */
+        max-width: 70%;
+      }
+      article {
+        max-width: 100%;
+      }
+      .article-title {
+        text-align: center;
+        font-size: 30px;
+        margin: 50px 0 30px;
+      }
+      .project-container {
+        display: flex;
+        justify-content: space-around;
+        /* flex-wrap: wrap; */
+      }
+      .project {
+        margin: 10px 30px;
+        border-bottom: 10px solid #e76f51;
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 0 10px gainsboro;
+      }
+      .project-title {
+        color: #e76f51;
+        font-weight: bold;
+      }
+
+      .video-content {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 0 0 40px gainsboro;
+      }
+      .location {
+        display: flex;
+      }
+      .maps {
+        /* margin-top: 50px; */
+        padding: 10px;
+        /* background-color: rgba(220, 220, 220, 0.13);  */
+        /* box-shadow: 0 0 10px gainsboro; */
+        /* display: flex;
+          justify-content: center; */
+      }
+      .maps-text {
+        padding: 0 3px;
+      }
+      iframe {
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 0 0 40px gainsboro;
+      }
+      .audio {
+        position: fixed;
+        /* right: 0; */
+      }
+
+
+
+/* FOOTER */
 footer {
     background-color: rgb(38, 70, 83);
 }
@@ -210,21 +349,4 @@ footer {
     color: white;
 }
 
-.project-container {
-    display: flex;
-    justify-content: space-around;
-}
 
-.project {
-    margin: 10px 30px;
-    border-bottom: 10px solid #e76f51;
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 0 10px gainsboro;
-}
-
-.project-title {
-    color: #e76f51;
-    font-weight: bold;
-}
