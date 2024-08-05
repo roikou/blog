@@ -102,4 +102,66 @@ function newElement() {
     }
   }
 
+// image slider
+  var slides = document.querySelectorAll(".slide");
+  var buttons = document.querySelectorAll(".slider-btn");
+  console.log(slides)
+  console.log(buttons)
+
+  let currentSlide = 1
+
+  // image slider manual
+  var manualNav = function(manual){
+    slides.forEach((slide) => {
+      slide.classList.remove("active")
+
+      buttons.forEach((btn) => {
+        btn.classList.remove("active")
+      });
+    });
+
+    slides[manual].classList.add("active");
+    buttons[manual].classList.add("active")
+  }
+
+  buttons.forEach((btn, i) => {
+    btn.addEventListener("click", () => {
+      manualNav(i)
+      currentSlide = i;
+    })
+  })
+
+  // image slider automatic slider
+  var repeat = function(){
+
+  let active = document.getElementsByClassName("active");
+  let i = 1;
+
+  var repeater = function(){
+    setTimeout(function(){
+
+      [...active].forEach((activeSlide) => {
+        activeSlide.classList.remove("active")
+      })
+
+        slides[i].classList.add("active");
+        buttons[i].classList.add("active");
+        i++;
+        console.log(i)
+
+        if(slides.length == i){
+          i = 0
+        }
+        if(i >= slides.length){
+          return;
+        }
+        repeater();
+    }, 5000);
+
+    };
+    repeater()
+
+  }
+  repeat()
+
 
